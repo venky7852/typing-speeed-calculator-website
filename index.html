@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,
+initial-scale=1.0"/>
+<!-- google fonts -->
+<link 
+ href="https://fonts.googleapis.com/css2?
+ family=poppins:wght@400;600&display=swap"
+ rel="stylesheet"
+ />
+ <!-- stylesheet -->
+ <link rel="stylesheet" href="style.css"/>
+ </head>
+ <body>
+    <div class="container">
+    <div class="stats">
+    <p> time:<span id="timer">0 seconds</span></p>
+    <p>mistake:<span id="mistakes">0</span></p>
+    </div>
+    <div id="quote" onmousedown= "return false"
+    onselectstart= "return false">
+    Karnataka is a beautiful place in India.
+     and it consists of so many historical places and so many rivers
+     </div>
+     <textarea
+     rows="2"
+     id="quote-input"
+     placeholder="type here...">
+     </textarea>
+     <button id="start-test"onclick="start test()"
+    >start test></button>
+     <button id="stop-test"
+     onclick="displayResult">stop test</button>
+     <div class="result">
+     <h3>result</h3>
+     <div class="wrapper">
+     <p>accuracy:<span id="accuracy"></span></p>
+     <p>speed:<span id="WPM"></span></p>
+     </div>
+     </div>
+     </div>
+<!-- script -->
+<script src="script.js"></script>
+</body>
+</html>
